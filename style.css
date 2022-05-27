@@ -40,9 +40,7 @@ body {
     background-image: url(images/img1.jpg);
     background-size: cover;
     background-position: center;
-    overflow: visible;
     top: 0;
-    
 }
 
 .aboutUsHomeCaptions {
