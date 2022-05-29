@@ -1,0 +1,160 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    image-rendering: optimizeSpeed;
+    text-rendering: optimizeSpeed;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    image-rendering: optimizeSpeed;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 1fr;
+}
+
+.wrapper {
+    display: grid;
+    grid-column: span 4;
+    grid-row: 1;
+    height: 50vh;
+    background-image: url(images/carFleet.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.vehicleFleet {
+    display: flex;
+    background: rgba(75, 159, 255, 0.5);
+    overflow: hidden;
+}
+
+.caption {
+    color: rgb(255, 247, 224);
+    display: flex;
+    flex-direction: column;
+    padding: 0 25vw 0 25vw;
+    text-align: center;
+    word-wrap: break-word;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.caption > h2 {
+    padding-bottom: 4vh;
+    color: rgb(231, 193, 23);
+}
+
+.galleryWrapper {
+    display: grid;
+    overflow: hidden;
+    grid-column: span 4;
+    grid-row: 2;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: min-content;
+    padding: 3% 12% 5% 12%;
+    gap: 2%;
+    background-color: #ececec8c;
+}
+
+.galleryItem {
+    display: grid;
+    position: relative;
+    grid-column: span 1;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    border: 1px solid #c2c2c2c0;
+    background-color: #FFFFFF;
+    row-gap: 1.5%;
+    overflow: hidden;
+    transition:transform 0.5s ease-out;
+}
+
+.galleryItem > img {
+    grid-row: 1;
+}
+
+.description {
+    display: grid;
+    position: relative;
+    grid-row: 2;
+    grid-template-rows: 0.5fr;
+    grid-template-columns: 1fr 0.2fr;
+    justify-items: center;
+    align-items: center;
+    border-top: 1.5px solid #b3b3b3cb;
+    width: 100%;
+}
+
+.description > h3 {
+    background-color: rgb(41, 175, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 0.82rem;
+    text-align: center;
+    position: absolute;
+    overflow: hidden;
+    width: 13%;
+    top: 10%;
+    right: 1.5%;
+}
+
+.description > p {
+    padding-left: 2%;
+    font-weight: 600;
+}
+
+.galleryItem:after {
+    background-color: #bdbdbd27;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    transition: all 0.3s ease;
+    z-index: 1;
+    opacity: 0;
+}
+
+.galleryItem:hover:after {
+    opacity: 1;
+}
+
+.galleryItem:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 1100px) {
+    .galleryItem {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 780px) {
+    .galleryItem {
+        grid-column: span 4;
+    }
+
+    .galleryWrapper {
+        padding: 3% 12% 5% 12%;
+        row-gap: 3vh;
+    }
+}
+
+
+
+

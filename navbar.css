@@ -1,9 +1,11 @@
 
 .navbar {
+    padding: 10px 1vw 0 0;
     display: grid;  
     position: -webkit-sticky;
     position: fixed;
     top: 0;
+
     grid-area: 1 / 1 / 1 / 4;
     grid-template-columns: auto 1fr auto;
     align-items: center;
