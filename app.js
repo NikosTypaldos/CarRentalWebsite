@@ -1,7 +1,7 @@
 const hamburgerBtn = document.querySelector(".demo");
-const navbarItem = document.querySelectorAll(".nav-link");
 const linksContainer = document.querySelector(".links-container");
 const navbar = document.querySelector(".navbar");
+
 
 function toggleMenu() {
     if(linksContainer.classList.contains("show")) {
@@ -11,4 +11,12 @@ function toggleMenu() {
     }
 }
 
-hamburgerBtn.addEventListener("click", toggleMenu)
+window.onscroll = () => {
+    if (document.body.scrollTop >= navbar.offsetHeight || document.documentElement.scrollTop >= navbar.offsetHeight) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+};
+
+hamburgerBtn.addEventListener("click", toggleMenu);
