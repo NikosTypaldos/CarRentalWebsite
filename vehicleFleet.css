@@ -22,6 +22,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto 1fr;
+    overflow: none;
 }
 
 .wrapper {
@@ -139,12 +140,40 @@ body {
 }
 
 @media (max-width: 1100px) {
+    .wrapper {
+        display: grid;
+        grid-column: span 4;
+        grid-row: 1;
+        height: 40vh;
+        font-size:1rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .caption {
+        padding: 0 2vw 0 2vw;
+    }
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+    }
+
     .galleryItem {
         grid-column: span 2;
     }
 }
 
 @media (max-width: 780px) {
+    .wrapper {
+        height: 65vh;
+    }
+
+    .caption {
+        padding: 0 1vw 0 1vw;
+    }
+
     .galleryItem {
         grid-column: span 4;
     }

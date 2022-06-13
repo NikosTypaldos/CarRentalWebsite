@@ -28,6 +28,7 @@ body {
     grid-template-rows: 1fr 0.5fr 1fr;
     position: relative;
     background: rgba(75, 159, 255, 0.6);
+    overflow: none;
 }
 
 .caption {

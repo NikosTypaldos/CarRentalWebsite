@@ -27,6 +27,7 @@ body {
     min-height: 100vh;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto 1fr 0.1fr 0.8fr 0.5fr;
+    overflow: none;
     
 }
 
@@ -43,7 +44,7 @@ body {
     flex: 1;
     text-align: center;
     height: 100%;
-    background-color: rgba(86, 164, 253, 0.8);
+    background-color: rgba(86, 164, 253, 0.5);
     color: rgb(255, 255, 255);
     flex-wrap: wrap;
 }
