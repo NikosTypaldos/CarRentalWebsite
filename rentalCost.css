@@ -1,69 +1,82 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
-    margin: 0;
-    padding: 0;
-    image-rendering: optimizeSpeed;
-    text-rendering: optimizeSpeed;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  image-rendering: optimizeSpeed;
+  text-rendering: optimizeSpeed;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 img {
-    image-rendering: optimizeSpeed;
+  image-rendering: optimizeSpeed;
 }
 
 body {
-    display: grid;
-    text-rendering: optimizeSpeed;
-    line-height: 1.5;
-    place-content: center;
-    min-height: 100vh;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 0.5fr 1fr;
-    position: relative;
-    background: rgba(75, 159, 255, 0.6);
-    overflow: none;
+  display: flex;
+  flex-direction: row;
+  line-height: 1.5;
+  min-height: 100vh;
+  background: rgba(75, 159, 255, 0.6);
+  overflow: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 5% 0 5%;
 }
 
 .caption {
-    display: flex;
-    grid-column: 2/4;
-    flex-direction: column;
-    grid-row: 1/3;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
 }
 
 .caption > h2 {
-    color: rgb(255, 221, 67);
-    font-size: 2rem;
-    padding-bottom: 4%;
-}
-
-.caption > p {
-    color: white;
-    font-size: 1.3rem;
+  padding-bottom: 3%;
 }
 
 form {
-    
-    grid-column: 2/4;
-    grid-row: 2/4;
-    color: white;
-    font-size: 1.1rem;
-    align-content: center;
+  display: table;
+  border-radius: 5px;
+  padding: 20px 20px 20px 20px;
+  background-color: rgba(75, 159, 255, 0.6);
+  color: whitesmoke;
+  align-items: center;
+  border-collapse: separate;
+  border-spacing: 10px;
 }
 
-input {
-    max-width: min-content;
-    max-height: 4%;
-    border-radius: 5px;
-    grid-column: 3;
+.row {
+  display: table-row;
+}
+
+label {
+  color: rgb(241, 206, 47);
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+::placeholder {
+  font-size: 0.95rem;
 }

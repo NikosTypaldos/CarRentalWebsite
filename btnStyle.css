@@ -1,119 +1,119 @@
 .btn-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: var(--bg);
-    position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg);
+  position: relative;
 }
 
 .btn-container > h2 {
-    position: absolute;
-    top: 10%;
-    color: white;
+  position: absolute;
+  top: 10%;
+  color: white;
 }
 
 .btn-container:nth-child(1) {
-    --btn-bg: rgb(238, 195, 4);
-    --bg: rgba(75, 159, 255, 0.7);
+  --btn-bg: rgb(238, 195, 4);
+  --bg: rgba(75, 159, 255, 0.7);
 }
 
 #rentalBtn {
-    --width: 180px;
-    --height: 60px;
-    border: 0;
-    position: relative;
-    min-width: var(--width);
-    min-height: var(--height);
-    border-radius: var(--height);
-    color: rgb(42, 170, 255);
-    font-weight: bold;
-    background: rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 1rem;
-    transition: color 0.5s ease;
+  --width: 180px;
+  --height: 60px;
+  border: 0;
+  position: relative;
+  min-width: var(--width);
+  min-height: var(--height);
+  border-radius: var(--height);
+  color: rgb(42, 170, 255);
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+  transition: color 0.5s ease;
 }
 
-
-#rentalBtn .text, #rentalBtn .icon-container {
-    position: relative;
-    z-index: 2;
+#rentalBtn .text,
+#rentalBtn .icon-container {
+  position: relative;
+  z-index: 2;
 }
 
 #rentalBtn .icon-container {
-    --icon-size: 25px;
-    position: relative;
-    width: var(--icon-size);
-    height: var(--icon-size);
-    margin-left: 15px;
-    transition: transform 500ms ease;
+  --icon-size: 25px;
+  position: relative;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  margin-left: 15px;
+  transition: transform 500ms ease;
 }
 
 #rentalBtn .icon-container .icon {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: var(--icon-size);
-    height: var(--icon-size);
-    transition: transform 500ms ease, opacity 250ms ease;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  transition: transform 500ms ease, opacity 250ms ease;
 }
 
 #rentalBtn .icon-container .icon--left {
-    transform: translateX(-200%);
-    opacity: 0;
+  transform: translateX(-200%);
+  opacity: 0;
 }
 
 #rentalBtn .icon-container .icon svg {
-    width: 100%;
-    height: 100%;
-    fill: white;
+  width: 100%;
+  height: 100%;
+  fill: white;
 }
 
 #rentalBtn:hover .icon-container .icon svg {
-    fill: rgb(42, 170, 255);
+  fill: rgb(42, 170, 255);
 }
 
 #rentalBtn:hover .icon-container .icon svg {
-    transition: fill 500ms;
+  transition: fill 500ms;
 }
 
 #rentalBtn::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--btn-bg);
-    border-radius: var(--height);
-    z-index: 1;
-    transition: transform 500ms ease;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--btn-bg);
+  border-radius: var(--height);
+  z-index: 1;
+  transition: transform 500ms ease;
 }
 
 #rentalBtn:hover::after {
-    transform: translateX(68%);
+  transform: translateX(68%);
 }
 
 #rentalBtn:hover .icon-container {
-    transform: translateX(8%);
+  transform: translateX(8%);
 }
 
 #rentalBtn:hover .icon-container .icon--left {
-    transform: translateX(0);
-    opacity: 1;
+  transform: translateX(0);
+  opacity: 1;
 }
 
 #rentalBtn:hover {
-    color: #fff;
+  color: #fff;
 }
 
 #rentalBtn:hover .icon-container .icon--right {
-    transform: translateX(200%);
-    opacity: 0;
+  transform: translateX(200%);
+  opacity: 0;
 }
