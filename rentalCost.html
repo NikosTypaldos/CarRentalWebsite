@@ -11,6 +11,8 @@
       href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700"
       rel="stylesheet"
     />
+    <script defer src="navbar.js"></script>
+    <script defer src="rentalCost.js"></script>
     <title>Car Rental Service</title>
   </head>
   <body>
@@ -50,13 +52,14 @@
           <table>
             <tr>
               <td colspan="2">
-                <label for="driverAge">Drivers Αge</label>
-                <select>
-                  <option value="0">Select drivers age</option>
-                  <option value="1">18-22</option>
-                  <option value="2">22-30</option>
-                  <option value="3">>30</option>
-                </select>
+                <label for="driverAge">Drivers Age</label>
+                <input
+                  type="number"
+                  id="selectAge"
+                  min="18"
+                  max="80"
+                  placeholder="Enter drivers age"
+                />
               </td>
             </tr>
             <tr>
@@ -83,9 +86,9 @@
               </td>
             </tr>
             <tr>
-              <td>
+              <td colspan="1">
                 <div class="elem">
-                  <button>
+                  <button id="calcCost" type='button'>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -105,12 +108,14 @@
                   </button>
                 </div>
               </td>
+              <td colspan="1">
+                <span id="displayCost"> 0 &euro;</span>
+              </td>
             </tr>
           </table>
         </form>
       </div>
     </div>
 
-    <script src="app.js"></script>
   </body>
 </html>

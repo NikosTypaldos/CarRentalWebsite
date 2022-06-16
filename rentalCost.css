@@ -90,7 +90,7 @@ label {
 
 input[type="number"],
 input[type="date"],
-select {
+#selectAge {
   outline: none;
   width: 100%;
   padding: 10px;
@@ -105,8 +105,8 @@ input[type="number"]:focus,
 input[type="date"]:focus,
 input[type="number"]:hover,
 input[type="date"]:hover,
-select:focus,
-select:hover {
+#selectAge:focus,
+#selectAge:hover {
   border: 2px solid #d68b00;
 }
 
@@ -114,7 +114,7 @@ select:hover {
   font-size: 0.95rem;
 }
 
-button {
+#calcCost {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,7 +130,7 @@ button {
   font-size: 1.05rem;
 }
 
-button:hover {
+#calcCost:hover {
   border: 1px solid #613f00;
   box-shadow: 1px 0px 1px #744b00;
   color: #613f00;
@@ -145,11 +145,26 @@ svg {
   scale: 1.15;
 }
 
-button:hover svg {
+#calcCost :hover svg {
   animation-name: rotate;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+}
+::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+    color: transparent;
+}
+#displayCost {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 10px;
+  color: rgb(0, 218, 29);
+  font-size: 1.3rem;
+  font-weight:600;
 }
 
 @keyframes rotate {
