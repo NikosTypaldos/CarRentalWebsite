@@ -14,29 +14,29 @@ btn.onclick = () => {
     var ageCost = calcCost['driverAge'] >= 18 && calcCost['driverAge'] < 22 ? (calcCost['driverAge'] * 0.00042)
                 : calcCost['driverAge'] >= 22 && calcCost['driverAge'] < 30 ? (calcCost['driverAge'] * 0.00036)
                 : calcCost['driverAge'] >= 30 ? (calcCost['driverAge'] * 0.00023)
-                : reset();
+                : resetForm();
     var cubismCostperDay = calcCost['cubism'].value <= 1600 ? 
                                                         ( daysOfRental <= 5 && daysOfRental > 0 ? 15.42
                                                         : daysOfRental <= 10 && daysOfRental > 0? 14.62 
                                                         : daysOfRental > 10 && daysOfRental > 0? 13.15
-                                                        : reset())
+                                                        : resetForm())
                         : calcCost['cubism'].value > 1600 && calcCost['cubism'].value <= 2000 ?
                                                         (daysOfRental <= 5 && daysOfRental > 0 ? 16.82
                                                         : daysOfRental <= 10 && daysOfRental > 0 ? 15.76 
                                                         : daysOfRental > 10 && daysOfRental > 0 ? 14.80
-                                                        : reset())
+                                                        : resetForm())
                         : calcCost['cubism'].value > 2000 ?
                                                         (daysOfRental <= 5 && daysOfRental > 0 ? 18.22
                                                             : daysOfRental <= 10 && daysOfRental > 0 ? 17.10 
                                                             : daysOfRental > 10 && daysOfRental > 0 ? 16.20
-                                                            : reset()) 
-                        :  reset();
+                                                            : resetForm()) 
+                        :  resetForm();
     premiumCost = ageCost * calcCost['cubism'].value;
     cost2 = daysOfRental * cubismCostperDay;
     displayCost.textContent = `${(premiumCost + cost2).toFixed(2)} €`;
 }
 
-function reset() {
+function resetForm() {
     alert("Please enter valid information");
     displayCost.textContent = 0 +' €';
     document.getElementById('costForm').reset();
