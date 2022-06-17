@@ -120,7 +120,7 @@ input[type="date"]:hover,
   justify-content: center;
   margin-top: 10px;
   outline: none;
-  width: 70%;
+  width: 100%;
   padding: 10px;
   border: 1px solid #017bbd;
   background-color: rgb(255, 150, 29);
@@ -145,7 +145,7 @@ svg {
   scale: 1.15;
 }
 
-#calcCost :hover svg {
+#calcCost:hover svg {
   animation-name: rotate;
   animation-duration: 2s;
   animation-iteration-count: infinite;
