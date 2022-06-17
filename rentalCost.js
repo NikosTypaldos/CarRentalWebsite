@@ -1,5 +1,6 @@
 const btn= document.querySelector('#calcCost');
-const displayCost = document.querySelector('#displayCost');
+const displayCost = document.querySelector('.displayCost');
+
 const calcCost = {
     cubism: document.querySelector('#engineDisplacement'),
     driverAge: document.querySelector('#selectAge'),
@@ -31,14 +32,19 @@ btn.onclick = () => {
                                                             : daysOfRental <= 10 && daysOfRental > 0 ? 17.10 
                                                             : daysOfRental > 10 && daysOfRental > 0 ? 16.20
                                                             : resetForm()) 
-                        :  console.log(15);
+                        :  resetForm();
     premiumCost = ageCost * calcCost['cubism'].value;
     cost2 = daysOfRental * cubismCostperDay;
-    displayCost.textContent = `${(premiumCost + cost2).toFixed(2)} €`;
+    if(isNaN(premiumCost + cost2)) {
+        displayCost.classList.add("hidden");
+    } else {
+        console.log(premiumCost + cost2);
+        displayCost.classList.remove("hidden");
+        displayCost.textContent = `${(premiumCost + cost2).toFixed(2)} €`;
+    }
 }
 
 function resetForm() {
     alert("Please enter valid information");
-    displayCost.textContent = 0 +' €';
     document.getElementById('costForm').reset();
 }

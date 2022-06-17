@@ -157,7 +157,7 @@ svg {
     color: transparent;
 }
 
-#displayCost {
+.displayCost {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -165,7 +165,11 @@ svg {
   margin-top: 10px;
   color: rgb(0, 218, 29);
   font-size: 1.3rem;
-  font-weight:600;
+  font-weight: 600;
+}
+
+.hidden {
+  display: none !important;
 }
 
 @keyframes rotate {
