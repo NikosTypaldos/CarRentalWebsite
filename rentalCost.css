@@ -84,36 +84,6 @@ table {
   border-spacing: 10px;
 }
 
-label {
-  color: #ffc74e;
-}
-
-input[type="number"],
-input[type="date"],
-#selectAge {
-  outline: none;
-  width: 100%;
-  padding: 10px;
-  border: 2px solid #017bbd;
-  background-color: white;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  transition: border 0.3s;
-}
-
-input[type="number"]:focus,
-input[type="date"]:focus,
-input[type="number"]:hover,
-input[type="date"]:hover,
-#selectAge:focus,
-#selectAge:hover {
-  border: 2px solid #d68b00;
-}
-
-::placeholder {
-  font-size: 0.95rem;
-}
-
 #calcCost {
   display: flex;
   align-items: center;
@@ -151,10 +121,11 @@ svg {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+
 ::-webkit-datetime-edit-year-field:not([aria-valuenow]),
 ::-webkit-datetime-edit-month-field:not([aria-valuenow]),
 ::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
-    color: transparent;
+  color: transparent;
 }
 
 .displayCost {

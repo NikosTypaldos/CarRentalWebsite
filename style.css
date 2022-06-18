@@ -1,248 +1,335 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
-    margin: 0;
-    padding: 0;
-    image-rendering: optimizeSpeed;
-    text-rendering: optimizeSpeed;
-    shape-rendering: optimizeSpeed;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  image-rendering: optimizeSpeed;
+  text-rendering: optimizeSpeed;
+  shape-rendering: optimizeSpeed;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 body {
-    display: grid;
-    text-rendering: optimizeSpeed;
-    line-height: 1.5;
-    place-content: center;
-    min-height: 100vh;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto 1fr auto;
-    position: relative;
+  display: grid;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  place-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr auto;
+  position: relative;
 }
 
 .homepage-body {
-    display: grid;
-    grid-area: 1 / 1 / 4 / 4;
-    grid-template-rows: 1fr 1fr;
+  display: grid;
+  grid-area: 1 / 1 / 4 / 4;
+  grid-template-rows: 1fr 1fr;
 }
 
 .aboutUsHome {
-    display: flex;
-    grid-row: span 2;
-    background-image: url(images/img1.jpg);
-    background-size: cover;
-    background-position: center;
-    height: clamp(70vh, 90vh, 90vh);
+  display: flex;
+  grid-row: span 2;
+  background-image: url(images/img1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: clamp(70vh, 90vh, 90vh);
 }
 
 .aboutUsHomeCaptions {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    background: rgba(75, 159, 255, 0.5);
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background: rgba(75, 159, 255, 0.5);
+  height: 100%;
 }
 
 .video-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(75, 159, 255, 0.5);
-    width: 40%;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(75, 159, 255, 0.5);
+  width: 40%;
 }
 
 .video-container > video {
-    margin: auto;
-    width: 90%;
+  margin: auto;
+  width: 90%;
 }
 
 .aboutUsHomeCaptions > h2 {
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 2.5rem;
-    line-height: 3rem;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  line-height: 3rem;
 }
 
 .aboutUsHomeCaptions > p {
-    width: 60%;
-    font-size: 1.2rem;
-    text-align: center;
+  width: 60%;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 .callUs {
-    margin-top: 1px;
-    color: rgb(255, 208, 0);
-    font-size: 1.5rem;
-    position: relative;
-    
+  margin-top: 1px;
+  color: rgb(255, 208, 0);
+  font-size: 1.5rem;
+  position: relative;
 }
 
 .callUs:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 3px;
-    width: 100%;
-    background: rgb(247, 213, 64);
-    opacity: 0;
-    transition: 0.25s all ease-in-out;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: rgb(247, 213, 64);
+  opacity: 0;
+  transition: 0.25s all ease-in-out;
 }
 
 .callUs:hover:after {
-    opacity: 1;
+  opacity: 1;
 }
 
 .companyProfileBody > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:center;
-    flex: 1;
-    padding: 0 2% 0 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 0 2% 0 2%;
 }
 
 .ourServices {
-    display: grid;
-    grid-template-rows: auto 1fr;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column: span 3;
-    grid-row: 4;
-    margin: 0 5% 5% 5%;
-    position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column: span 3;
+  grid-row: 4;
+  margin: 0 5% 5% 5%;
+  position: relative;
 }
 
 .ourServices > h2 {
-    color: rgb(255, 153, 0);
-    grid-column: span 4;
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: bolder;
-    padding: 5%;
+  color: rgb(255, 153, 0);
+  grid-column: span 4;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  padding: 5%;
 }
 
 .ourServices > div {
-    display: flex;
-    position: relative;
-    grid-column: span 1;
-    justify-content: baseline;
-    align-items: baseline;
-    transition: transform 0.5s;
-    margin: 3%;
+  display: flex;
+  position: relative;
+  grid-column: span 1;
+  justify-content: baseline;
+  align-items: baseline;
+  transition: transform 0.5s;
+  margin: 3%;
 }
 
-
-
 .ourServices > div:after {
-    background-color: rgba(75, 159, 255, 0.2);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    content: '';
-    transition: all 0.3s ease;
-    z-index: 1;
-    opacity: 0;
-    transform: scaleY(1);
+  background-color: rgba(75, 159, 255, 0.2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  transition: all 0.3s ease;
+  z-index: 1;
+  opacity: 0;
+  transform: scaleY(1);
 }
 
 .ourServices > div:hover:after {
-    transform: scale(1);
-    opacity: 1;
+  transform: scale(1);
+  opacity: 1;
 }
 
 .ourServices > div:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
-.ourServices > div:hover > img,   
+.ourServices > div:hover > img,
 .ourServices > div:hover > a {
   opacity: 1;
 }
 
 .ourServices > div > a {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate( -50%, -50% );
-    font-size: 1.7rem;
-    text-align: center;
-    color: white;
-    text-shadow: #000 0px 0px 3px;
-    -webkit-font-smoothing: antialiased;
-    align-items: center;
-    z-index: 1;
-    line-height: 1.1em;
-    opacity: 0;
-    z-index: 2;
-    transition-delay: 0.1s;
-    letter-spacing: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.7rem;
+  text-align: center;
+  color: white;
+  text-shadow: #000 0px 0px 3px;
+  -webkit-font-smoothing: antialiased;
+  align-items: center;
+  z-index: 1;
+  line-height: 1.1em;
+  opacity: 0;
+  z-index: 2;
+  transition-delay: 0.1s;
+  letter-spacing: 1px;
 }
 
+.newsletter {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  visibility: hidden;
+  position: absolute;
+  background-color: rgba(22, 22, 22, 0.5);
+  -webkit-animation: fadeIn 3s linear;
+}
 
+.newsletter.show {
+  visibility: visible;
+}
 
+table {
+  display: table;
+  position: relative;
+  border-radius: 4px;
+  border-color: rgba(39, 137, 250, 1);
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(39, 137, 250, 1);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  align-items: center;
+  border-collapse: separate;
+  border-spacing: 10px;
+  font-weight: 600;
+}
+
+#newsLetterForm {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #017bbd;
+  background-color: rgb(255, 150, 29);
+  color: white;
+  border-radius: 5px;
+  transition: color ease-out 0.5s;
+  transition: border ease-out 0.5s;
+  transition: box-shadow ease-out 0.5s;
+}
+
+#subscribe:hover {
+  border: 1px solid #613f00;
+  box-shadow: 1px 0px 1px #744b00;
+  color: #613f00;
+}
+
+.closeBtn {
+  position: absolute;
+  z-index: 9999;
+  right: 3%;
+  top: 2.5%;
+  font-weight: bold;
+  color: rgb(255, 208, 0);
+  background-color: inherit;
+  border: none;
+  scale: 1.8;
+  transition: color 0.5s ease;
+}
+
+.closeBtn:after {
+  display: inline-block;
+  content: "\00d7";
+}
+
+.closeBtn:hover {
+  color: #ca8300;
+}
+
+.newsLetterHeading {
+  color: white;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 @media (max-width: 1100px) {
+  .aboutUsHome {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: none;
+  }
 
+  .aboutUsHomeCaptions > p {
+    font-size: 1.1rem;
+  }
 
-    .aboutUsHome {
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        overflow: none;
-    }
+  .aboutUsHomeCaptions > h2 {
+    font-size: 1.5rem;
+  }
 
-    .aboutUsHomeCaptions > p {
-        font-size:1.1rem;
-    }
+  .aboutUsHomeCaptions > p > a {
+    font-size: 1.4rem;
+  }
 
-    .aboutUsHomeCaptions > h2 {
-        font-size:1.5rem;
-    }
+  .video-container {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    background: rgba(75, 159, 255, 0.5);
+    width: 100%;
+    padding-bottom: 10%;
+  }
 
-    .aboutUsHomeCaptions > p > a {
-        font-size:1.4rem;
-    }
+  .video-container > video {
+    margin: auto;
+    width: 60%;
+  }
 
-    .video-container {
-        display: flex;
-        align-self: center;
-        justify-self: center;
-        background: rgba(75, 159, 255, 0.5);
-        width: 100%;
-        padding-bottom: 10%;
-    }
+  .ourServices > div {
+    display: subgrid;
+    grid-column: span 2;
+  }
 
-    .video-container > video {
-        margin: auto;
-        width: 60%;
-    }
-
-    .ourServices > div {
-        display: subgrid;
-        grid-column: span 2;
-    }
-
-    .ourServices > div > a {
-        font-size: 1.15rem;
-        opacity: 1;
-    }
-    .ourServices > h2 {
-        font-size: 1.6rem;
-    }
-      
+  .ourServices > div > a {
+    font-size: 1.15rem;
+    opacity: 1;
+  }
+  .ourServices > h2 {
+    font-size: 1.6rem;
+  }
 }

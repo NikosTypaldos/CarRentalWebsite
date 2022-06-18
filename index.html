@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="navbar.css" />
-    <link rel="stylesheet" href="hamburgerIcon.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="navbar.css"/>
+    <link rel="stylesheet" href="hamburgerIcon.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet"/>
+    <link rel="stylesheet" href="form.css">
     <script defer src="navbar.js"></script>
+    <script defer src="newsletter.js"></script>
     <title>Car Rental Service</title>
   </head>
   <body>
@@ -80,6 +79,44 @@
           <img src="images/vip.jpg" alt="" width="100%" />
         </div>
       </div>
+    </div>
+
+    <div class="newsletter">
+      
+      <form action="" id="newsLetterForm">
+        <table>
+          <button class="closeBtn" type="button"></button>
+          <tr>
+            <td>
+              <h2 class="newsLetterHeading">Subscribe to our newsletter!</h2>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label for="fullname">Fullname</label>
+              <input
+                type="text"
+                id="fullname"
+                placeholder="Enter your name"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+              />
+            </td>
+          </tr>
+          <tr >
+            <td colspan="2">
+              <button id="subscribe">Subscribe</button>
+            </td>
+          </tr>
+        </form>
     </div>
   </body>
 </html>

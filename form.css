@@ -1,0 +1,23 @@
+label {
+  color: #ffc74e;
+}
+
+input {
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #017bbd;
+  background-color: white;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: border 0.3s;
+}
+
+input:focus,
+input:hover {
+  border: 2px solid #d68b00;
+}
+
+::placeholder {
+  font-size: 0.95rem;
+}

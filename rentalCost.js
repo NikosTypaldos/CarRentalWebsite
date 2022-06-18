@@ -3,7 +3,7 @@ const displayCost = document.querySelector('.displayCost');
 
 const calcCost = {
     cubism: document.querySelector('#engineDisplacement'),
-    driverAge: document.querySelector('#selectAge'),
+    driverAge: document.querySelector('#driverAge'),
     pickupDate: document.querySelector('#fromDate'),
     dropOffDate: document.querySelector('#toDate')
 }
@@ -38,7 +38,6 @@ btn.onclick = () => {
     if(isNaN(premiumCost + cost2)) {
         displayCost.classList.add("hidden");
     } else {
-        console.log(premiumCost + cost2);
         displayCost.classList.remove("hidden");
         displayCost.textContent = `${(premiumCost + cost2).toFixed(2)} €`;
     }
