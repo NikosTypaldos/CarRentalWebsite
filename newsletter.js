@@ -1,6 +1,6 @@
 const closeBtn = document.querySelector('.closeBtn');
 const newsLetter = document.querySelector('.newsletter');
-const subscribeBtn = document.querySelector('#subscribe');
+const subscribeBtn = document.querySelector('.subscribe');
 window.addEventListener("load", () => {
     
     setTimeout(function() {
@@ -8,11 +8,12 @@ window.addEventListener("load", () => {
     }, 1000);
 
     subscribeBtn.onclick = () => {
+        subscribeBtn.classList.add("success");
         subscribeBtn.innerHTML = "Thank you for subscribing!";
         setTimeout(function() {
             newsLetter.classList.remove('show');
         }
-        ,1000)
+        ,2000)
     }
 
     closeBtn.onclick = () => {

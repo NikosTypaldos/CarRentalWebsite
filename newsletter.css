@@ -34,7 +34,7 @@
   transform: translate(-50%, -50%);
 }
 
-#subscribe {
+.subscribe {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,7 +51,7 @@
   transition: box-shadow ease-out 0.5s;
 }
 
-#subscribe:hover {
+.subscribe:hover {
   border: 1px solid #613f00;
   box-shadow: 1px 0px 1px #744b00;
   color: #613f00;
@@ -82,6 +82,12 @@
 .newsLetterHeading {
   color: white;
 }
+
+.subscribe.success {
+  color: white !important;
+  background-color: #28A745 !important;
+}
+
 
 @media (max-width: 800px) {
   #newsLetterForm {
