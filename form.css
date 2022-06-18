@@ -2,7 +2,7 @@ label {
   color: #ffc74e;
 }
 
-input {
+input,textarea {
   outline: none;
   width: 100%;
   padding: 10px;
@@ -14,7 +14,9 @@ input {
 }
 
 input:focus,
-input:hover {
+input:hover,
+textarea:hover,
+textarea:focus {
   border: 2px solid #d68b00;
 }
 

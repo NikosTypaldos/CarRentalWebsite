@@ -64,13 +64,19 @@
   text-decoration: none;
   cursor: pointer;
   font-weight: bolder;
-  background-image: linear-gradient(to top, rgb(247, 213, 64) 60%, #fff 40%);
+  background-image: linear-gradient(to right, rgb(247, 213, 64) 50%, rgb(255, 226, 98) 50%);
   background-size: 100%;
-  background-clip: border-box;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+}
+
+#logo::before {
+  content: '';
+  width: 100vw;
+  height: 2px;
+  background-color: black;
 }
 
 .scrolled {
@@ -106,5 +112,12 @@
     grid-column: 1;
     grid-row: 1;
     padding: 5px 0 10px 0;
+    
+  }
+}
+
+@media (max-width: 650px) {
+  #logo {
+    font-size: 1.4rem;
   }
 }

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="navbar.js"></script>
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="hamburgerIcon.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="contactUs.css" />
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="newsletter.css">
+    <script defer src="newsletter.js"></script>
+    <title>Car Rental Service</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div id="logo">
+        <a href="">Car Rental Services</a>
+      </div>
+      <div class="links-container">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="companyProfile.html" class="nav-link">Company Profile</a>
+        <a href="vehicleFleet.html" class="nav-link">Vehicle fleet</a>
+        <a href="rentalCost.html" class="nav-link">Car rental cost</a>
+        <a href="contactUs.html" class="nav-link">Contact Us</a>
+        <a href="#" class="nav-link">Admin Page</a>
+      </div>
+      <div class="demo">
+        <div class="menu-icon">
+          <input class="menu-icon__cheeckbox" type="checkbox" />
+          <div>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="container">
+        <div class="contactUsForm">
+          <h2 class="contactHeading">Contact Us!</h2>
+          <p>
+            Fill out the form below and we will get in touch with you
+            immediately
+          </p>
+          <form action="" id="contactUsForm">
+            <table>
+              <tr>
+                <td>
+                  <label for="fullname">Fullname</label>
+                  <input
+                    type="text"
+                    id="fullname"
+                    placeholder="Enter your name"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" placeholder="Subject" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="message">Description</label>
+                  <textarea id="message" placeholder="Type your message here"></textarea>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </div>
+      <div class="container">
+        <div class="companyInfo">
+          <h2 class="contactHeading">Contact Information</h2>
+          <p>
+            Contact us via the details below or come visit us in beautiful
+            Athens, Greece
+          </p>
+          <table>
+            <tr>
+              <td class="contactDetails"><span style="font-weight: bold; color: #ffc74e;">Address</span>: Athens, Greece example 23, 52123</td>
+            </tr>
+            <tr>
+              <td class="contactDetails"><span style="font-weight: bold; color: #ffc74e;">Phone </span>:<a href="">+30 - 2102020202</a></td>
+            </tr>
+            <tr>
+              <td class="contactDetails"><span style="font-weight: bold; color: #ffc74e;">E-mail</span>: company@email.com</td>
+            </tr>
+          </table>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50310.60044109002!2d23.73833935!3d37.9908372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd1f067043f1%3A0x2736354576668ddd!2zzpHOuM6uzr3OsQ!5e0!3m2!1sel!2sgr!4v1655579429790!5m2!1sel!2sgr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="newsletter">
+        <form action="" id="newsLetterForm">
+          <table class="newsletterTable">
+            <button class="closeBtn" type="button"></button>
+            <tr>
+              <td>
+                <h2 class="newsLetterHeading">Subscribe to our newsletter!</h2>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <label for="fullname">Fullname</label>
+                <input type="text" id="fullname" placeholder="Enter your name" />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <button id="subscribe">Subscribe</button>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+  </body>
+</html>

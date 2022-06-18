@@ -24,7 +24,6 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   place-content: center;
-  min-height: 100vh;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto 1fr 0.1fr 1fr 0.5fr;
   overflow: none;

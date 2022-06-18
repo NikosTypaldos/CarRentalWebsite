@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="navbar.css"/>
-    <link rel="stylesheet" href="hamburgerIcon.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet"/>
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="hamburgerIcon.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="form.css" />
+    <link rel="stylesheet" href="newsletter.css">
+    <script defer src="newsletter.js"></script>
     <script defer src="navbar.js"></script>
     <script defer src="newsletter.js"></script>
     <title>Car Rental Service</title>
@@ -23,7 +28,7 @@
         <a href="companyProfile.html" class="nav-link">Company Profile</a>
         <a href="vehicleFleet.html" class="nav-link">Vehicle fleet</a>
         <a href="rentalCost.html" class="nav-link">Car rental cost</a>
-        <a href="#" class="nav-link">Contact Us</a>
+        <a href="contactUs.html" class="nav-link">Contact Us</a>
         <a href="#" class="nav-link">Admin Page</a>
       </div>
       <div class="demo">
@@ -61,30 +66,29 @@
         <h2>Our Services</h2>
         <div class="col1">
           <img src="images/rentAVan.jpg" alt="" width="100%" />
-          <a href="">Rent a van</a>
+          <a href="vehicleFleet.html">Rent a van</a>
         </div>
 
         <div class="col2">
           <img src="images/rentACar.jpg" alt="" width="100%" />
-          <a href="">Rent a Car</a>
+          <a href="vehicleFleet.html">Rent a Car</a>
         </div>
 
         <div class="col3">
-          <a href="">Rent a motorcycle</a>
+          <a href="vehicleFleet.html">Rent a motorcycle</a>
           <img src="images/rentAMotorcycle.jpg" alt="" width="100%" />
         </div>
 
         <div class="col4">
-          <a href="">VIP Services</a>
+          <a href="vehicleFleet.html">VIP Services</a>
           <img src="images/vip.jpg" alt="" width="100%" />
         </div>
       </div>
     </div>
 
     <div class="newsletter">
-      
       <form action="" id="newsLetterForm">
-        <table>
+        <table class="newsletterTable">
           <button class="closeBtn" type="button"></button>
           <tr>
             <td>
@@ -94,29 +98,22 @@
           <tr>
             <td colspan="2">
               <label for="fullname">Fullname</label>
-              <input
-                type="text"
-                id="fullname"
-                placeholder="Enter your name"
-              />
+              <input type="text" id="fullname" placeholder="Enter your name" />
             </td>
           </tr>
           <tr>
             <td colspan="2">
               <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                placeholder="Enter your email"
-              />
+              <input type="email" id="email" placeholder="Enter your email" />
             </td>
           </tr>
-          <tr >
+          <tr>
             <td colspan="2">
               <button id="subscribe">Subscribe</button>
             </td>
           </tr>
-        </form>
+        </table>
+      </form>
     </div>
   </body>
 </html>
