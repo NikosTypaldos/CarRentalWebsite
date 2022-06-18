@@ -7,7 +7,7 @@
     visibility: hidden;
     position: absolute;
     background-color: rgba(22, 22, 22, 0.5);
-    -webkit-animation: fadeIn 3s linear;
+    -webkit-animation: fadeIn 2s linear;
   }
   
   .newsletter.show {

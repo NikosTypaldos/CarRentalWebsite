@@ -5,7 +5,7 @@ window.addEventListener("load", () => {
     
     setTimeout(function() {
         newsLetter.classList.add('show');
-    }, 2000);
+    }, 1000);
 
     closeBtn.onclick = () => {
             newsLetter.classList.remove('show');
