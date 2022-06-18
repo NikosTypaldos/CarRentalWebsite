@@ -1,21 +1,17 @@
 .navbar {
-  padding: 10px 1vw 10px 0;
+  padding: 5px 5px 8px 0;
   display: grid;
   position: -webkit-sticky;
   position: fixed;
   top: 0;
-  z-index: 10;
+  z-index: 9999;
   grid-area: 1 / 1 / 1 / 4;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  border-bottom: 3px solid transparent;
+  border-bottom: 2px solid transparent;
   color: white;
   width: 100vw;
   transition: background-color 500ms linear;
-}
-
-.hamburger {
-  display: none;
 }
 
 .links-container {
@@ -102,17 +98,17 @@
 
   .navbar {
     background: rgba(0, 8, 17, 0.5);
+    padding: 0;
+    margin: auto;
   }
 
   .navbar {
-    z-index: 1;
+    z-index: 99999;
   }
 
   #logo {
     grid-column: 1;
     grid-row: 1;
-    padding: 5px 0 10px 0;
-    
   }
 }
 

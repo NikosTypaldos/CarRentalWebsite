@@ -1,8 +1,7 @@
 .demo {
   display: flex;
-  position: absolute;
-  right: 1.5vw;
-  top: 0.9vh;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .demo .menu-icon {

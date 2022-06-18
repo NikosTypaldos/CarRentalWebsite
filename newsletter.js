@@ -1,6 +1,7 @@
 const closeBtn = document.querySelector('.closeBtn');
 const newsLetter = document.querySelector('.newsletter');
 const subscribeBtn = document.querySelector('.subscribe');
+
 window.addEventListener("load", () => {
     
     setTimeout(function() {

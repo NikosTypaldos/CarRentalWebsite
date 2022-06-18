@@ -18,7 +18,6 @@ a {
 body {
   display: grid;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
   place-content: center;
   min-height: 100vh;
   grid-template-columns: repeat(3, 1fr);
@@ -39,6 +38,7 @@ body {
   background-size: cover;
   background-position: center;
   height: clamp(70vh, 90vh, 90vh);
+  overflow: hidden;
 }
 
 .aboutUsHomeCaptions {
@@ -187,22 +187,9 @@ body {
 }
 
 @media (max-width: 1100px) {
-  table {
-    width: 100%;
-  }
-
-  label {
-    font-size: 0.9rem;
-  }
-
-  .newsLetterHeading {
-    font-weight: bold;
-    font-size: 1.2rem;
-  }
-
 
   .aboutUsHome {
-    padding: 0;
+    padding: 0 0 0 0;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -212,11 +199,11 @@ body {
   }
 
   .aboutUsHomeCaptions > p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .aboutUsHomeCaptions > h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .aboutUsHomeCaptions > p > a {
@@ -249,10 +236,11 @@ body {
   .ourServices > h2 {
     font-size: 1.6rem;
   }
+
+  .callUs {
+    font-size: 1.1rem !important;
+  }
 }
 
 @media (max-width: 630px) {
-    table {
-        width: 85vw;
-      }
 }
