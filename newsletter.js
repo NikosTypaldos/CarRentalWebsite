@@ -1,14 +1,22 @@
 const closeBtn = document.querySelector('.closeBtn');
 const newsLetter = document.querySelector('.newsletter');
-
+const subscribeBtn = document.querySelector('#subscribe');
 window.addEventListener("load", () => {
     
     setTimeout(function() {
         newsLetter.classList.add('show');
     }, 1000);
 
-    closeBtn.onclick = () => {
+    subscribeBtn.onclick = () => {
+        subscribeBtn.innerHTML = "Thank you for subscribing!";
+        setTimeout(function() {
             newsLetter.classList.remove('show');
+        }
+        ,1000)
+    }
+
+    closeBtn.onclick = () => {
+        newsLetter.classList.remove('show');
     }
     
 }) 
